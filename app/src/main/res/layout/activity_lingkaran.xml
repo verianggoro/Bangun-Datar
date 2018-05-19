@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devlat.veri.bangundatar.Lingkaran">
+
+    <TextView
+        android:id="@+id/Tv_index_ling"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Lingkaran"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Tv_Jari"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/Tv_index_ling"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:text="Jari-Jari :"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/In_jari"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/Tv_index_ling"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/Tv_Jari"
+        android:hint="Masukan Jari-Jari"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:id="@+id/Line_Ling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/In_jari"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn_Luas_Ling"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#f0e68c"
+            android:text="@string/luas" />
+
+
+        <Button
+            android:id="@+id/Btn_Kell_Ling"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#adff2f"
+            android:text="@string/keliling" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Tv_Hasil_Ling"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/Line_Ling"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/Btn_reset_Ling"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Tv_Hasil_Ling"
+        android:layout_marginTop="20dp"
+        android:background="#ff0000"
+        android:text="Hapus" />
+</RelativeLayout>

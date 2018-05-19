@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bangun Datar</string>
+    <string name="keliling">Keliling</string>
+    <string name="luas">Luas</string>
+</resources>

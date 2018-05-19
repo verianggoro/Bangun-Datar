@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Persegi_Activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devlat.veri.bangundatar.perseegi">
+
+    <TextView
+        android:id="@+id/index_persegi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Persegi"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Tv_sisi"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/index_persegi"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:text="Sisi :"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/InSisi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/index_persegi"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/Tv_sisi"
+        android:hint="Masukan Sisi"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:id="@+id/LinearBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tv_sisi"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn_luas_persegi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#f0e68c"
+            android:text="Luas" />
+
+        <Button
+            android:id="@+id/Btn_kell_persegi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#adff2f"
+            android:text="Keliling" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Tv_hasil_persegi"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/LinearBtn"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/Btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Tv_hasil_persegi"
+        android:layout_marginTop="20dp"
+        android:background="#ff0000"
+        android:text="Hapus" />
+</RelativeLayout>

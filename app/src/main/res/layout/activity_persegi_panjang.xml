@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devlat.veri.bangundatar.PersegiPanjang">
+
+    <TextView
+        android:id="@+id/index_persegi_panjang"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Persegi Panjang"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Tv_Panjang"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/index_persegi_panjang"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="Panjang : "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Tv_lebar"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Tv_Panjang"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="Lebar : "
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/In_Pnjg_PP"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/index_persegi_panjang"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/Tv_Panjang"
+        android:hint="Masukan Panjang"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/In_Lbr_PP"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/In_Pnjg_PP"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/Tv_lebar"
+        android:hint="Masukan Lebar"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:id="@+id/Linear_PersegiPanjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/In_Lbr_PP"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn_Luas_persegiPanjang"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#f0e68c"
+            android:text="Luas" />
+
+
+        <Button
+            android:id="@+id/Btn_Kell_persegiPanjang"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#adff2f"
+            android:text="Keliling" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Tv_hasil_Persegi_Pnjng"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/Linear_PersegiPanjang"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/Btn_reset_persegiPanjang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Tv_hasil_Persegi_Pnjng"
+        android:layout_marginTop="20dp"
+        android:background="#ff0000"
+        android:text="Hapus" />
+</RelativeLayout>

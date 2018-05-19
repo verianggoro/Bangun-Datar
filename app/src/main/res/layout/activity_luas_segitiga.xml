@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devlat.veri.bangundatar.LuasSegitiga">
+
+    <TextView
+        android:id="@+id/index_Sgt_Luas"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Segitiga"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Tv_Alas_Sgt"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/index_Sgt_Luas"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:text="Alas  :"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/Tv_Tinggi_Sgt"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/Tv_Alas_Sgt"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:text="Tinggi  :"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/In_Alas_Sgt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/index_Sgt_Luas"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/Tv_Alas_Sgt"
+        android:hint="Masukan Alas"
+        android:inputType="number" />
+
+
+    <EditText
+        android:id="@+id/In_Tinggi_Sgt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/In_Alas_Sgt"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/Tv_Alas_Sgt"
+        android:hint="Masukan Tinggi"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:id="@+id/Line_Sgt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tv_Tinggi_Sgt"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn_Hsl_LuasSgt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#FFFF00"
+            android:text="="
+            android:textSize="26sp" />
+
+
+        <Button
+            android:id="@+id/Btn_Hps_LuasSgt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:text="Hapus" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Tv_HasilLuas_Sgt"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/Line_Sgt"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="60sp" />
+
+</RelativeLayout>

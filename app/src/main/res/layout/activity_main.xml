@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devlat.veri.bangundatar.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/BtnPersegi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#87cefa"
+            android:text="Persegi"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/BtnPersegiPanjang"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#87cefa"
+            android:text="Persegi Panjang"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/BtnLigkaran"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#87cefa"
+            android:text="Lingkaran"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/BtnSegitiga"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#87cefa"
+            android:textSize="20sp"
+            android:text="Segitiga" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devlat.veri.bangundatar.Segitiga">
+
+    <TextView
+        android:id="@+id/index_Sgt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Segitiga"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+
+    <LinearLayout
+        android:id="@+id/Line_sgt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/index_Sgt"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn_Luas_Sgt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#f0e68c"
+            android:text="Luas" />
+
+        <Button
+            android:id="@+id/Btn_Kell_Sgt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#adff2f"
+            android:text="Keliling" />
+    </LinearLayout>
+
+</RelativeLayout>
